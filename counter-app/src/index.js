@@ -6,14 +6,14 @@ let parentNode = document.getElementById('root');
 class Main extends React.Component{
   constructor(){
     super();
-    this.state = {counter:0}
+    this.state = {value:0}
   }
 
   render(){
     return (
       <div>
-        <button onClick={()=> this.setState({counter: this.state.counter+1})}>Ok</button>
-         <label>label is: {this.state.counter}</label>
+        <button onClick={()=> this.setState({value: this.state.value+1})}>Ok</button>
+         <label>label is: {this.state.value}</label>
       </div>
      )
   }
